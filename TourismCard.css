@@ -1,0 +1,78 @@
+/* src/TourismCard.css */
+.tourism-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #feb0ff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #dff0fc;
+    margin: 20px auto;
+  }
+  
+  .tourism-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 22px;
+    margin: 0 0 10px 0;
+    color: #2c3e50;
+  }
+  
+  .card-description {
+    font-size: 14px;
+    color: #34495e;
+    margin-bottom: 15px;
+  }
+  
+  .card-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #56033a;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .card-button:hover {
+    background-color: #176508;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .tourism-card {
+      max-width: 90%;
+    }
+  
+    .card-title {
+      font-size: 18px;
+    }
+  
+    .card-description {
+      font-size: 13px;
+    }
+  
+    .card-button {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+  }
+  
